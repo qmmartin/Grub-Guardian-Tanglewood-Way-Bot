@@ -6,13 +6,17 @@ The bot is programmed in Python 3.10.6 and uses OpenCV's 'Template Matching' fea
 
 The bot only works on the Tanglewood Way stage, and the BlueStacks instance must be in Fullscreen and at 1980x1080 (Untested) resolution.
 
-To run the bot, you first must have Grub Guardian installed on Bluestacks.
+The strategy used by the bot is from my YouTube video "How to farm free Wizard101 energy elixirs on Grub Guardian"
 
-Then, install the required Python Libraries. (OpenCV, Pyautogui, Numpy, Time) The links can be found in the 'Installed Libraries' section of this readme.
+To run the bot, you first must have Grub Guardian installed on Bluestacks (Instructions in section below).
+
+Next, you must install the required Python Libraries. (OpenCV, Pyautogui, Numpy) The links can be found in the 'Installed Libraries' section of this readme.
+
+You can install these to your version of Python by running the command 'python -m pip install opencv-python numpy pyautogui' in your Command Prompt (Windows only).
 
 Make sure to open the Repository's folder if you are using VSCode. If you do not, the script will not be able to access the images in the imgs folder.
 
-Additionally, the player must have a Mega Life Pet equipped for this program to function correctly.
+Additionally, the player must have a Mega Life Pet equipped, as well as the Wysteria Map Pack and Star Guardian unlocked for this program to function correctly.
 
 Finally, launch the game, login, and set it on the Wysteria Map page (Shown below).
 
@@ -27,7 +31,7 @@ The approximate rate of Energy Elixirs (EEs) is 1 EE per 5 runs, although this c
 
 1. Download and install [BlueStacks](https://support.bluestacks.com/hc/en-us/categories/4407981230349-BlueStacks-X) to your PC.
 2. Open 'BlueStacks Multi-Instance Manager'
-3. In the 'Multi Instance Manager', press the blue 'Instance+' button (Shown below).
+3. In the 'Multi Instance Manager', press the blue '+Instance' button (Shown below).
 
     <img src="imgs/instanceButton.PNG" alt="Alt Text" width="100" height="42">
 
@@ -57,3 +61,4 @@ The approximate rate of Energy Elixirs (EEs) is 1 EE per 5 runs, although this c
 # Other Resources
 - [Guide for Installing Grub Guardian on Bluestacks](<https://www.reddit.com/r/Wizard101/comments/12tj3s1/a_semicomprehensive_guide_to_playing_grub/>) (by AmazingBadgamer)
 - [Amazon Appstore App](<https://www.amazon.com/gp/mas/get/amazonapp>)
+- [Tanglewood Way Free EE Strategy](<https://www.youtube.com/watch?v=iWpcQNuVs2g>) (by me)
