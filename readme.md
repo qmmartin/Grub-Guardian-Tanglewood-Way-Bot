@@ -10,6 +10,8 @@ To run the bot, you first must have Grub Guardian installed on Bluestacks.
 
 Then, install the required Python Libraries. (OpenCV, Pyautogui, Numpy, Time) The links can be found in the 'Installed Libraries' section of this readme.
 
+Make sure to open the Repository's folder if you are using VSCode. If you do not, the script will not be able to access the images in the imgs folder.
+
 Finally, launch the game, login, and set it on the Wysteria Map page (Shown below).
 
 <img src="imgs/wysteriaWorldPack.PNG" alt="Alt Text" width="300" height="200">
