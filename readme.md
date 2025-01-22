@@ -44,6 +44,10 @@ The approximate rate of Energy Elixirs (EEs) is 1 EE per 5 runs, although this c
 11. Once it is installed, open the Amazon Appstore App and Login. Then, search "Grub Guardian" in the app's searchbar and install it.
 12. Grub Guardian should now be installed on your BlueStacks instance and be ready to play.
 
+# Known bugs/issues
+- Currently there is an issue where a treant will leak on one of the waves, resulting in a lower score. Unclear whether or not this affects the rate of EE rewards.
+- There is a known rare bug where the program will not upgrade the star guardian to Tier 3 for some reason. This results in some program-breaking issues, such as the loop not completing, preventing successful farming.
+
 # Installed Libraries
 - [Pyautogui](https://pyautogui.readthedocs.io/en/latest/)
 - [OpenCV](https://pypi.org/project/opencv-python/)
