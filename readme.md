@@ -12,6 +12,8 @@ Then, install the required Python Libraries. (OpenCV, Pyautogui, Numpy, Time) Th
 
 Make sure to open the Repository's folder if you are using VSCode. If you do not, the script will not be able to access the images in the imgs folder.
 
+Additionally, the player must have a Mega Life Pet equipped for this program to function correctly.
+
 Finally, launch the game, login, and set it on the Wysteria Map page (Shown below).
 
 <img src="imgs/wysteriaWorldPack.PNG" alt="Alt Text" width="300" height="200">

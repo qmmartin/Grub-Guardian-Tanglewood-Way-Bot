@@ -51,7 +51,7 @@ while True:
     refImg3 = cv2.imread("imgs/reference3.PNG", cv2.IMREAD_GRAYSCALE)
     clickImg((findImg(refImg3)), refImg3)
 
-    time.sleep(1)
+    time.sleep(5)
 
     refImg4 = cv2.imread("imgs/reference4.PNG", cv2.IMREAD_GRAYSCALE)
     locations4 = (findImg(refImg4))
@@ -140,6 +140,7 @@ while True:
 
     clickImg((findImg(playButton)), playButton)
 
+    #Upgrade left myth tower to tier 5
     refImg14 = cv2.imread("imgs/reference14.PNG", cv2.IMREAD_GRAYSCALE)
     findImg(refImg14)
     refImg15 = cv2.imread("imgs/reference15.PNG", cv2.IMREAD_GRAYSCALE)
@@ -148,22 +149,27 @@ while True:
     clickImg(locations15, mythSymbol)
     clickImg(locations15, mythSymbol)
 
+    #Upgrade right myth tower to tier 5
     refImg16 = cv2.imread("imgs/reference16.PNG", cv2.IMREAD_GRAYSCALE)
     clickImg((findImg(refImg16)), refImg16)
     locations16 = (findImg(mythSymbol))
     clickImg(locations16, mythSymbol)
     clickImg(locations16, mythSymbol)
 
+    #Pause the game when silver reaches 30
     refImg17 = cv2.imread("imgs/reference17.PNG", cv2.IMREAD_GRAYSCALE)
     findImg(refImg17, 0.9)
     clickImg((findImg(pauseButton)), pauseButton)
-    clickImg((findImg(refImg6)), refImg6)
+    clickImg((findImg(refImg6,0.6)), refImg6)
 
-    #Buy star guardian when money hits 30
+    #Buy star guardian when silver hits 30
     starSymbol = cv2.imread("imgs/starSymbol.PNG", cv2.IMREAD_GRAYSCALE)
-    locations17 = (findImg(starSymbol, 0.65))
+    locations17 = (findImg(starSymbol, 0.8))
+    time.sleep(1)
     clickImg(locations17, starSymbol)
-    pyautogui.click()
+    #Give the game a buffer of time
+    time.sleep(0.1)
+    clickImg(locations17, starSymbol)
 
     #Unpause after placing star guardian
     clickImg((findImg(playButton)), playButton)
