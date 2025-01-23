@@ -60,6 +60,7 @@ while True:
     clickImg(locations4, refImg4)
     clickImg(locations4, refImg4)
 
+    time.sleep(0.2)
     refImg5 = cv2.imread("imgs/reference5.PNG", cv2.IMREAD_GRAYSCALE)
     clickImg((findImg(refImg5)), refImg5)
 
@@ -184,7 +185,7 @@ while True:
     pyautogui.click()
 
     refImg20 = cv2.imread("imgs/reference20.PNG", cv2.IMREAD_GRAYSCALE)
-    clickImg((findImg(refImg20)), refImg20)
+    clickImg((findImg(refImg20, 0.6)), refImg20)
     locations20 = (findImg(starSymbol, 0.6))
     clickImg(locations20, starSymbol)
     pyautogui.click()
@@ -193,7 +194,7 @@ while True:
     findImg(refImg21)
 
     refImg22 = cv2.imread("imgs/reference20.PNG", cv2.IMREAD_GRAYSCALE)
-    clickImg((findImg(refImg22)), refImg22)
+    clickImg((findImg(refImg22, 0.5)), refImg22)
     locations20 = (findImg(starSymbol, 0.6))
     clickImg(locations20, starSymbol)
     pyautogui.click()
