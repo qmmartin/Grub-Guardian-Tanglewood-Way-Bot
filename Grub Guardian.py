@@ -6,27 +6,27 @@ import time
 def findImg(img, threshold=0.8):
     #SELECTING WIZARD101 PRIZES
     isDone = False
-    while isDone == False:
+    while not isDone:
+        try:
+                # Take a screenshot of the screen
+                screenshot = pyautogui.screenshot()
+                screen = np.array(screenshot)
 
-        #Take a screenshot of the screen
-        screenshot = pyautogui.screenshot()
-        screen = np.array(screenshot)
+                # Convert the screen image to grayscale and match
+                screen_gray = cv2.cvtColor(screen, cv2.COLOR_RGB2GRAY)
+                result = cv2.matchTemplate(screen_gray, img, cv2.TM_CCOEFF_NORMED)
 
-        # Convert the screen image to grayscale and match
-        screen_gray = cv2.cvtColor(screen, cv2.COLOR_RGB2GRAY)
-        result = cv2.matchTemplate(screen_gray, img, cv2.TM_CCOEFF_NORMED)
-        threshold
+                # Get the locations of matches
+                locations = np.where(result >= threshold)
 
-        #Get the locations of matches
-        locations = np.where(result >= threshold)
-
-        #If matches exist, click the first one
-        if (len(locations[0]) > 0):
-            isDone = True
-            return(locations)
+                # If matches exist, return the locations
+                if len(locations[0]) > 0:
+                    isDone = True
+                    return locations
+        except OSError as e:
+            print("Error taking screenshot, retrying...", e)
+            time.sleep(1)  # Wait before retrying
         
-        time.sleep(0.5)
-    
 
 def clickImg(locations, img):
         #If matches exist, click the first one

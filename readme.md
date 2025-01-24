@@ -10,7 +10,7 @@ The strategy used by the bot is from my YouTube video "How to farm free Wizard10
 
 To run the bot, you first must have Grub Guardian installed on Bluestacks (Instructions in section below).
 
-Next, you must install the required Python Libraries. (OpenCV, Pyautogui, Numpy) The links can be found in the 'Installed Libraries' section of this readme.
+Next, you must install Python and the required Python Libraries. (OpenCV, Pyautogui, Numpy) The links can be found in the 'Installed Libraries' section of this readme.
 
 You can install these to your version of Python by running the command 'python -m pip install opencv-python numpy pyautogui' in your Command Prompt (Windows only).
 
@@ -58,6 +58,7 @@ The approximate rate of Energy Elixirs (EEs) is 1 EE per 5 runs, although this c
 - [Time](https://docs.python.org/3/library/time.html)
 
 # Other Resources
+- [Python](https://www.python.org/downloads/)
 - [Guide for Installing Grub Guardian on Bluestacks](<https://www.reddit.com/r/Wizard101/comments/12tj3s1/a_semicomprehensive_guide_to_playing_grub/>) (by AmazingBadgamer)
 - [Amazon Appstore App](<https://www.amazon.com/gp/mas/get/amazonapp>)
 - [Tanglewood Way Free EE Strategy](<https://www.youtube.com/watch?v=iWpcQNuVs2g>) (by me)
