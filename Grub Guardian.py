@@ -18,7 +18,7 @@ def findImg(img, threshold=0.8):
 
                 # Get the locations of matches
                 locations = np.where(result >= threshold)
-
+                
                 # If matches exist, return the locations
                 if len(locations[0]) > 0:
                     isDone = True
@@ -98,6 +98,7 @@ while True:
         locations9 = (findImg(mythSymbol))
         clickImg(locations9, mythSymbol)
         clickImg(locations9, mythSymbol)
+        time.sleep(0.5)
 
     #Unpause so minions can advance
     playButton = cv2.imread("imgs/playButton.PNG", cv2.IMREAD_GRAYSCALE)

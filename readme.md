@@ -16,7 +16,7 @@ You can install these to your version of Python by running the command 'python -
 
 Make sure to open the Repository's folder if you are using VSCode. If you do not, the script will not be able to access the images in the imgs folder.
 
-Additionally, the player must have a Mega Life Pet equipped, as well as the Wysteria Map Pack and Star Guardian unlocked for this program to function correctly.
+Additionally, the player must have a Mega (Not Ultra, as it will NOT work!) Life Pet equipped, as well as the Wysteria Map Pack and Star Guardian unlocked for this program to function correctly.
 
 Finally, launch the game, login, and set it on the Wysteria Map page (Shown below).
 
